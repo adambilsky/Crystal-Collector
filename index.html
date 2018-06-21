@@ -16,28 +16,39 @@
 
 <body>
     <div class="container">
-        <div id="instructions">
+        <div class="row" id="instructions">
             <h1>Instructions</h1>
-            <p>The "target" below is a randomly generated number. Each of the four crystals below also contains a hidden value. <br> Each time a crystal is clicked, its value is added to the total score. <br>The object of the game is to determine the hidden value of each crystal and click on each crystal the right number of times to bring the total value exactly equal to the target value without going over. <br><br>Good luck!</p>
+            <p>The "target" below is a randomly generated number. Each crystal also contains a hidden value which, when clicked, is added to the total score.</p><p>Determine the hidden value of each crystal and click any combination of buttons that will make the total value equal the target value without going over.<br>Good luck!</p>
         </div>
 
-       <div id="gamecard">
-            <div id="target">
-                
+       <div class="row" id="gamecard">
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="target"></div>
+                </div>
+                <div class="col-md-4">
+                    <div id="currentScore"></div>
+                </div>
+                <div class="col-md-4">
+                    <div id="winLoss"></div>
+                </div>
             </div>
+            <div class="row" id="buttons">
+                <div class="col-md-2"></div>
+                <div class="col-md-2">
+                    <button id="button-1" class="btn button"><img src="assets/images/002464.jpg"></button>
+                </div>
+                <div class="col-md-2">
+                    <button id="button-2" class="btn button"><img src="assets/images/Gypsum-24382.jpg"></button>
+                </div>    
+                <div class="col-md-2">
+                    <button id="button-3" class="btn button"><img src="assets/images/gypsum.jpg"></button>
+                </div>
+                <div class="col-md-2">
+                    <button id="button-4" class="btn button"><img src="assets/images/red-crystal.jpg"></button>
+                </div>
+                <div class="col-md-2"></div>
 
-            <div id="currentScore">
-
-            </div>
-            <div id="winLoss">
-
-            </div>
-
-            <div id="buttons">
-                <button id="button-1" class="btn button"><img src="assets/images/002464.jpg"></button>
-                <button id="button-2" class="btn button"><img src="assets/images/Gypsum-24382.jpg"></button>
-                <button id="button-3" class="btn button"><img src="assets/images/gypsum.jpg"></button>
-                <button id="button-4" class="btn button"><img src="assets/images/red-crystal.jpg"></button>
             </div>
     
         </div>

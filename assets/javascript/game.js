@@ -43,9 +43,9 @@ $(document).ready(function() {
         button4 = Math.floor(Math.random()*5 + 1);    
         currentSum=0;
         currentSumEqualsTarget = false;
-        $("#target").html("<h3>Target: " + targetNum + "</h3>");
-        $("#currentScore").html("<h3>Current Score: " + currentSum + "</h3>");
-        $("#winLoss").html("<h3>Wins: " + wins + " Losses: " + losses + "</h3>");
+        $("#target").html("<h5>Target Score: " + targetNum + "</h5>");
+        $("#currentScore").html("<h5>Current Score: " + currentSum + "</h5>");
+        $("#winLoss").html("<h5>Wins: " + wins + " Losses: " + losses + "</h5>");
 
         printStart();
     }
@@ -60,14 +60,15 @@ $(document).ready(function() {
         if (currentSum===targetNum) {
             currentSumEqualsTarget = true;
             console.log(currentSumEqualsTarget);
+            // $("#currentScore").html("<h5>Current Score: " + currentSum + "</h5>");
             wins++;
-            alert("you win!");
+            alert("You win!");
             console.log("wins "+ wins, "losses " + losses);
             resetGame();
         }
 
         else if (currentSum>targetNum) {
-            alert("you lose!");
+            alert("You lose!");
             losses++;
             console.log("wins "+ wins, "losses " + losses);
             resetGame();
@@ -82,28 +83,28 @@ $(document).ready(function() {
         // number to current total
     $("#button-1").on("click", function() {
         currentSum = currentSum + button1;
-        $("#currentScore").html("<h3>Current Score: " + currentSum + "</h3>");
+        $("#currentScore").html("<h5>Current Score: " + currentSum + "</h5>");
         console.log("current sum: " + currentSum);
         winCheck();
     })
 
     $("#button-2").on("click", function() {
         currentSum = currentSum + button2;
-        $("#currentScore").html("<h3>Current Score: " + currentSum + "</h3>");
+        $("#currentScore").html("<h5>Current Score: " + currentSum + "</h5>");
         console.log("current sum: " + currentSum);
         winCheck();
     })
 
     $("#button-3").on("click", function() {
         currentSum = currentSum + button3;
-        $("#currentScore").html("<h3>Current Score: " + currentSum + "</h3>");
+        $("#currentScore").html("<h5>Current Score: " + currentSum + "</h5>");
         console.log("current sum: " + currentSum);
         winCheck();
     })
 
     $("#button-4").on("click", function() {
         currentSum = currentSum + button4;
-        $("#currentScore").html("<h3>Current Score: " + currentSum + "</h3>");
+        $("#currentScore").html("<h5>Current Score: " + currentSum + "</h5>");
         console.log("current sum: " + currentSum);
         winCheck();
     })

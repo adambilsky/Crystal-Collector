@@ -1,55 +1,77 @@
 .button {
     border: 2px solid red;
-    max-width: 80px;
+    max-width: 150px;
 }
 img {
     max-width:100%; 
     height:auto;
 }
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+h3 {
+    font-size: 18px;
+}
 .container {
-    /* position: relative; */
+    position: relative;
 
 }
 #instructions {
-    position: relative;
-    top:75px;
+    /* position: relative;
+    top:50px; */
+    padding: 10px;
     max-width: 640px;
+    border: 2px solid black;
 }
 
 #gamecard {
-    position: relative;
-    top: 40%;
-    height: 600px;
+    /* position: relative;
+    top: 100px; */
+    margin: 20 auto;
+    border: 3px solid yellow;
+    height: 100%;
+    max-width: 640px;
+    min-width: 400px;
 }
 
 #target {
-    position: relative;
+    /* position: absolute; */
     float: left;
-    padding: 5px;
-    top: 25%;
     width: auto;
+    padding: 5px;
     border: 2px solid red;
+    /* top: 10%;
+    left: 5%; */
+
 }
 #currentScore {
-    position: relative;
+    /* position: absolute; */
+    float:left;
     width: auto;
     padding: 5px;
-    float:left;
     border: 2px solid blue;
-    top:25%;
+    /* top:10%; */
+    /* right: 5%; */
+
 }
 #winLoss {
-    position: absolute;
-    border: 2px solid green;
+    /* position: absolute; */
+    float: left;
+    width: auto;
     padding: 5px;
-    bottom:50%;
+    border: 2px solid green;
+    /* top:33%;
+    left: 5%; */
 }
 
 #btn {
     float: left;
 }
 #buttons {
-    position: absolute;
-    float: left;
-    bottom: 30%;
+    /* position: absolute; */
+    height:100px;
+    /* float: left; */
+    /* left: 25%;
+    bottom: 15%; */
 }
