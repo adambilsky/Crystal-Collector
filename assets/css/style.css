@@ -1,72 +1,72 @@
+
 .button {
-    border: 2px solid red;
+    border: 3px solid red;
     max-width: 150px;
+    margin:auto;
 }
 img {
-    max-width:100%; 
+    max-width:75%; 
     height:auto;
 }
 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
+    color: darkslateblue;
 }
-h3 {
+h5 {
     font-size: 18px;
+    color: darkslateblue;
+}
+.row {
+    padding-top: 10px;
 }
 .container {
-    position: relative;
-
+    background-color: cornsilk;
+    border: 3px solid darkslateblue;
+    /* max-width: 960px; */
 }
+
 #instructions {
     /* position: relative;
     top:50px; */
     padding: 10px;
-    max-width: 640px;
-    border: 2px solid black;
-}
-
-#gamecard {
-    /* position: relative;
-    top: 100px; */
-    margin: 20 auto;
-    border: 3px solid yellow;
-    height: 100%;
-    max-width: 640px;
-    min-width: 400px;
+    /* max-width: 640px; */
+    color: darkslateblue;
 }
 
 #target {
     /* position: absolute; */
-    float: left;
-    width: auto;
+    /* float: left; */
+    /* width: auto; */
+    /* margin-left: 5%; */
     padding: 5px;
-    border: 2px solid red;
+    text-align: center;
     /* top: 10%;
     left: 5%; */
-
 }
+
 #currentScore {
     /* position: absolute; */
-    float:left;
-    width: auto;
+    /* float:left; */
+    /* width: auto; */
     padding: 5px;
-    border: 2px solid blue;
+    text-align: center;
     /* top:10%; */
     /* right: 5%; */
 
 }
 #winLoss {
     /* position: absolute; */
-    float: left;
-    width: auto;
+    /* float: left; */
+    /* width: auto; */
+    text-align: center;
     padding: 5px;
-    border: 2px solid green;
     /* top:33%;
     left: 5%; */
 }
 
 #btn {
-    float: left;
+    /* float: left; */
 }
 #buttons {
     /* position: absolute; */
